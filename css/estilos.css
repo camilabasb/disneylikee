@@ -1,0 +1,759 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+header {
+    width: 100%;
+    height: 800px;
+    background-image: url(https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2020/04/DLP2113wedf.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 40px;
+    color:#fff;
+}
+
+
+
+
+
+/*  us */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galeria */
+
+
+.galeria{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    height: 10em;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.titi{
+    margin-top: 20px;
+}
+
+.jorge{
+    margin-top: 50px;
+    color: #642a73;
+    text-align: center;
+}
+
+.migaleria{
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.migaleria li{
+    margin: 5px;
+}
+
+.migaleria img{
+    width: 230px;
+    height: 150px;
+}
+
+.modal{
+    visibility: hidden;
+    opacity: 0;
+    height: 0.2em;
+
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 200px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.miimagen{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miimagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.miimagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.miimagen img{
+   width: 500px;
+    height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    /*border: 7px solid #fff;*/
+}
+
+.cerrar{
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 11px;
+
+}
+
+
+.todito{
+    margin-bottom: 90px;
+}
+
+.sole {
+  width: 100%;
+  margin-bottom: -25px;
+}
+
+.opiniones{
+    background: white;
+    padding-bottom: 30px;
+}
+
+
+.opinion-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opinion-ind{
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px dashed #0071bc;
+    width: 28%;
+    text-align: center;
+}
+
+.opinion-ind img{
+    width: 90%;
+}
+
+.opinion-ind h3{
+    margin: 10px 0;
+}
+
+.opinion-ind p{
+    font-weight: 300;
+    /*text-align: justify;*/
+}
+
+.bota{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.boton-personalizado {
+text-decoration:none;
+font-weight: 600;
+font-size: 20px;
+color:#ffffff;
+padding-top:8px;
+padding-bottom:8px;
+padding-left:20px;
+padding-right:20px;
+background-color:#642a73;
+border-radius: 15px;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    
+
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+   
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+         
+
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+
+    .slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+}
+
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.cards_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cards_wrap .card_item {
+  width: 25%;
+  padding: 10px;
+}
+
+.cards_wrap .card_inner {
+  background: #fff;
+}
+
+.cards_wrap .card_top {
+  width: 100%;
+  min-height: 225px;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.cards_wrap .card_bottom {
+  padding: 15px;
+}
+
+.cards_wrap .card_bottom .card_category {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cards_wrap .card_bottom .card_info {
+  text-align: center;
+  padding: 15px;
+  /*margin: 10px 0;*/
+  border: 1px dashed #0071bc;
+}
+
+.cards_wrap .card_bottom .card_info .title {
+  color: #0071bc;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.cards_wrap .card_bottom .card_creator {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .cards_wrap .card_item {
+    width: 33.3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards_wrap .card_item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 528px) {
+  .cards_wrap .card_top {
+    height: auto;
+  }
+  .cards_wrap .card_item {
+    width: 100%;
+  }
+}
+
+.barra{
+    width: 100%;
+    height: 90px;
+    background-image: url(https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2020/04/DLP2113wedf.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+
+
+
+.container-all{
+    width: 100%;
+    margin: auto;
+    padding-right: 60px;
+    padding-left: 60px;
+    background: white;
+    margin-top: 25px;
+}
+
+.title{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #642a73
+}
+
+.sub-title{
+    font-size: 30px;
+    font-weight: 400;
+    color: #642a73
+}
+
+.container-all img{
+    width: 380px;
+    float: left;
+    margin-right: 20px;
+    /*margin-bottom: 15px;*/
+}
+
+.container-all p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.container-in{
+    width: 100%;
+    margin: auto;
+    background: white;
+}
+
+.container-in img{
+    width: 440px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+.container-in p{
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.container-ti{
+    width: 100%;
+    margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    background: white;
+    margin-top: 25px;
+}
+
+.container-ti img{
+    width: 380px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.container-ti p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.container-lu{
+    width: 100%;
+    margin: auto;
+    background: white;
+}
+
+.container-lu img{
+    width: 440px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+.container-lu p{
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.container-po{
+    width: 100%;
+    margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    background: white;
+    margin-top: 25px;
+}
+
+.container-po img{
+    width: 380px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.container-po p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.container-re{
+    width: 100%;
+    margin: auto;
+    background: white;
+    margin-bottom: 100px;
+}
+
+.container-re img{
+    width: 440px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+.container-re p{
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.escrito{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.carta{
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    height: 70em;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+    width: 300px;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    margin: 15px;
+    height: 500px;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.contiene{
+    padding: 2px 16px;
+}
+
